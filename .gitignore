@@ -13,7 +13,7 @@ __pycache__/
 env/
 build/
 develop-eggs/
-dist/
+
 downloads/
 eggs/
 .eggs/
@@ -91,3 +91,5 @@ ENV/
 # Rope project settings
 .ropeproject
 
+.idea/workspace.xml
+.idea

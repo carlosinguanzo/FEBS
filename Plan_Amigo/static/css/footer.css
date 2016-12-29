@@ -1,0 +1,128 @@
+#footer-1{
+    background: #EBEBEB;
+    padding: 50px;
+    font-size: 14px;
+    line-height: 150%;
+
+    max-height: 250px;
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer-col{
+    border-left: 1px solid rgb(123, 127, 141);
+    padding: 10px 0 10px 20px;
+    min-height: 190px;
+}
+
+#footer-1 ul {
+    padding-left: 0px;
+    list-style: none;
+    max-width: 250px;
+}
+
+#footer-1 ul li a {
+    color: #666;
+}
+
+#footer-1 .footer-title{
+    color: #2885C8;
+    font-weight: bold;
+    font-size: 15px!important;
+    margin-bottom: 10px !important;
+}
+
+#footer-2{
+    background: #A1A1A1;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 30px 0;
+
+    max-height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer-2 p{
+    margin-bottom: 0px;
+}
+#footer-form{
+    text-align: center;
+}
+#footer-input{
+    border: none;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    min-width: 200px;
+
+}
+
+.footer-icon{
+    font-size: 25px;
+    color: #3C8BC5;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 1200px){
+    .footer-col {
+        max-width: 250px;
+        margin: auto;
+        border: 0;
+        text-align: center;
+        padding: 10px 0 10px 10px;
+    }
+    #footer-1{
+        padding-bottom: 0;
+    }
+    #footer-2,#footer-1{
+        position: relative;
+        bottom: 0;
+        margin-top: 0;
+        max-height: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    body{
+        margin-bottom: 0;
+    }
+}
+
+/*MailChimp*/
+
+#mc_embed_signup{
+    font: 14px "NOVECENTOWIDE", sans-serif;
+}
+
+#texto-registra {
+    width: 100%;
+    line-height:1.6em;
+    color:#7b7f8d ;
+    font-family:"NOVECENTOWIDE", sans-serif;
+
+}
+
+#mc_embed_signup form {
+    padding: 0 !important;
+}
+
+#mc_embed_signup input.email{
+    margin: 0;
+    max-width: 240px;
+}
+
+#mc_embed_signup input.button {
+    display: block;
+    width: 310%;
+    min-width: 90px;
+    max-width: 240px;
+}
+

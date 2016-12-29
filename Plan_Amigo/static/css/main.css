@@ -1,0 +1,48 @@
+@font-face{
+    font-family: Arpoador;
+    src:url(../fonts/Arpoador.otf);
+}
+
+@font-face{
+    font-family: Gotham;
+    src:url(../fonts/GOTHAM-MEDIUM.TTF);
+}
+
+h4, h5, h6, p , span, body{
+    font-family: "Gotham";
+
+}
+
+h1, h2, h3 {
+    font-family: "Arpoador";
+    font-weight: bold !important;
+     letter-spacing: 2px;
+}
+
+
+
+.btn-agruppa{
+    background: #ED2040;
+    border-radius: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none !important;
+}
+
+.btn-agruppa:hover{
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.45);
+    box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.45);
+}
+
+.top-green-bar{
+    background: #D5DA2E;
+    color: #ffffff;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+}

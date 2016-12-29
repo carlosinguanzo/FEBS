@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Inicio de Sesión{% endblock %}
+
+{% block custom_css %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+{% endblock %}
+
+{% block content %}
+
+    <div class="top-green-bar" style="text-align: center;">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 id="titulo-registro"> Inicio de Sesión </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class=" row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8">
+                <section id="login">
+                    {% if next %}
+                        <form class="form-inline" action="{% url 'login' %}?next={{next}}" method="post" >
+                    {%else%}
+                        <form class="form-inline" action="{% url 'login' %}" method="post" >
+                    {% endif %}
+
+                    <h3>•  Introduce tus datos  •</h3>
+                    <br>
+                    <h5 style="color:red;"> {{ error }} </h5>
+                    <div class="form-group  login-field login-input" style="margin-left: 5px;">
+                        <label class="sr-only">E-mail</label>
+                        <div class="input-group">
+                            <div class="input-group-addon tags-unete"><i class="fa fa-user"></i></div>
+                            <input type="text" class="form-control" placeholder="Telefono" name="username" id="logemail" type="email">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group  login-field login-input">
+                        <label class="sr-only">Contraseña</label>
+                        <div class="input-group">
+                            <div class="input-group-addon tags-unete"><i class="fa fa-lock"></i></div>
+                            <input type="password" class="form-control" placeholder="Contraseña" name="password">
+                        </div>
+                    </div><br><br>
+                    <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                    <input type="hidden" name="prefix" value="formLogin">
+                    <button class="btn-agruppa" type="submit">Iniciar sesión</button>
+                    {% if msg %}
+                        <h5>{{ msg }}</h5>
+                    {% endif %}
+                    <br>
+                    </form>
+                </section>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+
+{% endblock content %}

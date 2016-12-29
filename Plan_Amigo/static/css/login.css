@@ -1,0 +1,20 @@
+#login{
+    text-align: center;
+}
+
+.tags-unete{
+    min-width: 100px;
+}
+
+.login-input{
+    margin-top: 5px;
+    min-width: 300px;
+}
+
+.top-green-bar{
+    background: #D5DA2E;
+    color: #ffffff;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+}

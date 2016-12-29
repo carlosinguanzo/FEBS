@@ -1,0 +1,19 @@
+.tags-unete{
+    min-width: 300px;
+}
+
+.control-group{
+    margin-top: 5px;
+}
+
+#columna-2{
+    text-align: center;
+}
+
+.top-green-bar{
+    background: #D5DA2E;
+    color: #ffffff;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+}

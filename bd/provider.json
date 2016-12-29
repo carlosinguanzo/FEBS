@@ -1,0 +1,170 @@
+[
+  {
+    "model": "Plan_Amigo.rol",
+    "pk": 1,
+    "fields": {
+      "name": "Tendero"
+    }
+  },
+  {
+    "model": "Plan_Amigo.rol",
+    "pk": 2,
+    "fields": {
+      "name": "Jefe de bodega"
+    }
+  },
+  {
+    "model": "Plan_Amigo.rol",
+    "pk": 3,
+    "fields": {
+      "name": "Transportador"
+    }
+  },
+
+    {
+    "model": "Plan_Amigo.rol",
+    "pk": 4,
+    "fields": {
+      "name": "Administrador"
+    }
+  },
+    {
+    "model": "Plan_Amigo.rol",
+    "pk": 5,
+    "fields": {
+      "name": "Televentas"
+    }
+  },
+    {
+    "model": "Plan_Amigo.estado",
+    "pk": 1,
+    "fields": {
+      "name": "Distrito Capital"
+    }
+  },
+  {
+    "model": "Plan_Amigo.estado",
+    "pk": 2,
+    "fields": {
+      "name": "Miranda"
+    }
+  },
+  {
+    "model": "Plan_Amigo.ciudad",
+    "pk" : 1,
+    "fields": {
+      "name": "Caracas"
+    }
+  },
+  {
+    "model": "Plan_Amigo.municipio",
+    "pk" : 1 ,
+    "fields": {
+      "name": "Chacao"
+    }
+  },
+  {
+    "model" : "Plan_Amigo.municipio",
+    "pk" : 2 ,
+    "fields":{
+      "name" : "Sucre"
+    }
+  },
+  {
+    "model": "Plan_Amigo.direccion",
+    "pk" : 1,
+    "fields": {
+      "calle": "Verdin",
+      "municipio": "1",
+      "ciudad": "1",
+      "estado": "1"
+    }
+  },
+  {
+    "model": "Plan_Amigo.Ruta",
+    "pk" : 1,
+    "fields": {
+      "nombre": "Centro"
+    }
+  },
+    
+  {
+    "model": "Plan_Amigo.Ruta",
+    "pk" : 2,
+    "fields": {
+      "nombre": "Sur"
+    }
+  },
+  
+ 
+  {
+  "model": "auth.User",
+  "pk" : 1,
+  "fields": {
+    "username": "04168252813",
+    "password": "pbkdf2_sha256$20000$hbf0IL0fF6Ii$bB/8MNBgwo4xzVZXCiLZ+fnaKxziO/DWN0vu60NrThI=",
+    "first_name": "Domingo",
+    "last_name": "Garcia",
+    "email": "dgarcia@idbcgroup.com"
+  }
+    },
+ 
+  {
+  "model": "Plan_Amigo.UserAttributes",
+  "pk" : 1,
+  "fields": {
+    "user": "1",
+    "cedula": "3980289"
+  }
+    },
+
+  {
+  "model": "Plan_Amigo.Tendero",
+  "pk" : 1,
+  "fields": {
+    "user": "1",
+    "barrio": "La bombilla",
+    "nombre_tienda": "cocoflow",
+    "fecha_ingreso": "2016-12-21",
+    "como_llego": "2",
+    "ruta": "1",
+    "tipo": "4",
+    "interes": "7",
+    "direccion": "1",
+    "smartphone": "True",
+    "comentarios": "No es interesante"
+  }
+    },
+
+  {
+  "model": "auth.User",
+  "pk" : 2,
+  "fields": {
+    "username": "04241351973",
+    "password": "pbkdf2_sha256$20000$hbf0IL0fF6Ii$bB/8MNBgwo4xzVZXCiLZ+fnaKxziO/DWN0vu60NrThI=",
+    "first_name": "Domingo",
+    "last_name": "Arteaga",
+    "email": "darteaga@idbcgroup.com"
+  }
+    },
+ 
+  {
+  "model": "Plan_Amigo.UserAttributes",
+  "pk" : 1,
+  "fields": {
+    "user": "2",
+    "cedula": "20914613"
+  }
+    },
+
+  {
+  "model": "Plan_Amigo.Transportador",
+  "pk" : 1,
+  "fields": {
+    "user": "2",
+    "ruta": "2"
+
+  }
+    }
+
+]

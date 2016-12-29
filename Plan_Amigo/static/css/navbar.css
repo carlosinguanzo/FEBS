@@ -1,0 +1,30 @@
+.sidebar_option{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #222d32;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.user_id{
+    position: relative;
+    width: 100%;
+    padding: 50px;
+    color: #fff;
+}
+
+.hide-toggle{
+    display: none;
+}
+
+#agruppa_logo{
+    height: 65px;
+}
+
+@media only screen and (max-width: 770px) {
+.hide-toggle{
+    display: block;
+}
+}
